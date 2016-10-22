@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -47,9 +49,11 @@
 			<Add library="/usr/lib/x86_64-linux-gnu/liballegro_ttf.so" />
 			<Add directory="/usr/lib" />
 		</Linker>
+		<Unit filename="include/CGameEngine.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src/CGameEngine.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

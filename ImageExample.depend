@@ -5,3 +5,18 @@
 	"allegro5/allegro_image.h"
 	"allegro5/allegro_native_dialog.h"
 
+1477140709 source:/home/mangesh/Coding/GameDev/Allegro/gitcode/Allegro/main.c
+	<stdio.h>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_native_dialog.h"
+
+1477157322 source:/home/mangesh/Coding/GameDev/Allegro/gitcode/Allegro/src/CGameEngine.cpp
+	"CGameEngine.h"
+
+1477156654 /home/mangesh/Coding/GameDev/Allegro/gitcode/Allegro/include/CGameEngine.h
+	<stdio.h>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_native_dialog.h"
+
