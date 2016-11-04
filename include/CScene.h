@@ -9,6 +9,8 @@ class CScene
     public:
         CScene();
         virtual ~CScene();
+        void AddGameObject(CGameObject &gameObject);
+        void Update();
     protected:
     private:
         std::list<CGameObject> objects;

@@ -68,10 +68,12 @@
 		<Unit filename="include/CGameEngine.h" />
 		<Unit filename="include/CGameObject.h" />
 		<Unit filename="include/CScene.h" />
+		<Unit filename="include/CSceneManager.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CGameEngine.cpp" />
 		<Unit filename="src/CGameObject.cpp" />
 		<Unit filename="src/CScene.cpp" />
+		<Unit filename="src/CSceneManager.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

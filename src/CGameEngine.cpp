@@ -14,6 +14,8 @@ CGameEngine::CGameEngine()
     redraw = true;
     doexit = false;
 
+    sceneManager = new CSceneManager();
+
 }
 
 CGameEngine::~CGameEngine()
