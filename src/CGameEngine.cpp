@@ -24,9 +24,6 @@ CGameEngine::~CGameEngine()
 void CGameEngine::Initialize()
 {
 
-
-
-
     if(!al_init()) {
         al_show_native_message_box(display, "Error", "Error", "Failed to initialize allegro!",
                                  NULL, ALLEGRO_MESSAGEBOX_ERROR);

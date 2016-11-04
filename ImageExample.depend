@@ -20,7 +20,7 @@
 	"allegro5/allegro_image.h"
 	"allegro5/allegro_native_dialog.h"
 
-1478184410 source:/home/mangesh/Coding/GameDev/Allegro/src/CGameEngine.cpp
+1478190704 source:/home/mangesh/Coding/GameDev/Allegro/src/CGameEngine.cpp
 	"CGameEngine.h"
 
 1478184410 /home/mangesh/Coding/GameDev/Allegro/include/CGameEngine.h
@@ -31,4 +31,17 @@
 
 1478184410 source:/home/mangesh/Coding/GameDev/Allegro/main.cpp
 	"CGameEngine.h"
+
+1478266838 source:/home/mangesh/Coding/GameDev/Allegro/src/CGameObject.cpp
+	"CGameObject.h"
+
+1478271813 /home/mangesh/Coding/GameDev/Allegro/include/CGameObject.h
+	<list>
+
+1478269853 source:/home/mangesh/Coding/GameDev/Allegro/src/CScene.cpp
+	"CScene.h"
+
+1478271660 /home/mangesh/Coding/GameDev/Allegro/include/CScene.h
+	"CGameObject.h"
+	<list>
 
