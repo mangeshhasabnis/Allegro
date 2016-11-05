@@ -4,10 +4,14 @@ SpaceShip::SpaceShip()
 {
     this->xlocation = 200;
     this->ylocation = 200;
-    this->spaceShipBmp = al_load_bitmap("./spaceship.png");
+    this->objectBmp = al_load_bitmap("/home/mangesh/Coding/GameDev/Allegro/spaceship.png");
+
+    if(!this->objectBmp) {
+        fprintf(stderr, "failed to load image!\n");
+    }
 }
 
 SpaceShip::~SpaceShip()
 {
-    al_destroy_bitmap(this->spaceShipBmp);
+    al_destroy_bitmap(this->objectBmp);
 }

@@ -25,8 +25,7 @@ class CGameEngine
         bool redraw;
         bool doexit;
         const float FPS = 60;
-        const int SCREEN_W = 800;
-        const int SCREEN_H = 600;
+
 
         CSceneManager *sceneManager;
 

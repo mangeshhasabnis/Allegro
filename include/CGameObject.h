@@ -11,10 +11,11 @@ class CGameObject
         CGameObject();
         virtual ~CGameObject();
         virtual void Draw();
-    protected:
+
         int xlocation;
         int ylocation;
-        ALLEGRO_BITMAP *spaceShipBmp;
+        ALLEGRO_BITMAP *objectBmp;
+    protected:
         std::list<CGameObject> childObjects;
     private:
 

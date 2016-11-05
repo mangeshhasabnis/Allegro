@@ -6,7 +6,6 @@ enum MYKEYS {
 
 CGameEngine::CGameEngine(CSceneManager *parScManager, CRenderer *parRenderer)
 {
-    display = NULL;
     event_queue = NULL;
     timer = NULL;
 
@@ -34,6 +33,8 @@ void CGameEngine::Initialize()
                                  NULL, ALLEGRO_MESSAGEBOX_ERROR);
     }
 
+    renderer->Initialize();
+
     if(!al_install_keyboard()) {
         al_show_native_message_box(display, "Error", "Error", "Failed to initialize the keyboard!",
                                  NULL, ALLEGRO_MESSAGEBOX_ERROR);
@@ -50,12 +51,6 @@ void CGameEngine::Initialize()
                                  NULL, ALLEGRO_MESSAGEBOX_ERROR);
     }
 
-    display = al_create_display(SCREEN_W,SCREEN_H);
-    if(!display) {
-        al_show_native_message_box(display, "Error", "Error", "Failed to initialize display!",
-                                 NULL, ALLEGRO_MESSAGEBOX_ERROR);
-    }
-
     event_queue = al_create_event_queue();
     if(!event_queue) {
         al_show_native_message_box(display, "Error", "Error", "Failed to create event_queue!",
@@ -64,12 +59,11 @@ void CGameEngine::Initialize()
         al_destroy_display(display);
     }
 
-    al_register_event_source(event_queue, al_get_display_event_source(display));
-
     al_register_event_source(event_queue, al_get_keyboard_event_source());
 
     al_register_event_source(event_queue, al_get_timer_event_source(timer));
 
+    renderer->RegisterEventSource(event_queue);
 }
 
 void CGameEngine::Start()
@@ -143,13 +137,12 @@ void CGameEngine::Start()
         }*/
 
         currentScene = this->sceneManager->GetCurrentScene();
-
+        renderer->Draw(currentScene);
     }
 }
 
 void CGameEngine::Cleanup()
 {
-    al_destroy_display(this->display);
     /*al_destroy_bitmap(space_ship);
     al_destroy_bitmap(enemy_ship1);
     al_destroy_bitmap(enemy_ship2);

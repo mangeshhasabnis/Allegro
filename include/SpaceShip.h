@@ -2,8 +2,9 @@
 #define SPACESHIP_H
 
 #include "CGameObject.h"
+#include <stdio.h>
 
-class SpaceShip : CGameObject
+class SpaceShip : public CGameObject
 {
     public:
         SpaceShip();
