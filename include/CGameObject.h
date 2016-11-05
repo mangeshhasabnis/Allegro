@@ -8,6 +8,7 @@ class CGameObject
     public:
         CGameObject();
         virtual ~CGameObject();
+        virtual void Draw();
     protected:
     private:
         int xlocation;
