@@ -20,36 +20,52 @@
 	"allegro5/allegro_image.h"
 	"allegro5/allegro_native_dialog.h"
 
-1478274889 source:/home/mangesh/Coding/GameDev/Allegro/src/CGameEngine.cpp
+1478337649 source:/home/mangesh/Coding/GameDev/Allegro/src/CGameEngine.cpp
 	"CGameEngine.h"
 
-1478274764 /home/mangesh/Coding/GameDev/Allegro/include/CGameEngine.h
+1478335909 /home/mangesh/Coding/GameDev/Allegro/include/CGameEngine.h
 	<stdio.h>
 	"allegro5/allegro.h"
 	"allegro5/allegro_image.h"
 	"allegro5/allegro_native_dialog.h"
 	"CSceneManager.h"
+	"CRenderer.h"
 
-1478184410 source:/home/mangesh/Coding/GameDev/Allegro/main.cpp
+1478335928 source:/home/mangesh/Coding/GameDev/Allegro/main.cpp
 	"CGameEngine.h"
 
 1478317691 source:/home/mangesh/Coding/GameDev/Allegro/src/CGameObject.cpp
 	"CGameObject.h"
 
-1478317562 /home/mangesh/Coding/GameDev/Allegro/include/CGameObject.h
+1478339146 /home/mangesh/Coding/GameDev/Allegro/include/CGameObject.h
 	<list>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
 
-1478317728 source:/home/mangesh/Coding/GameDev/Allegro/src/CScene.cpp
+1478338566 source:/home/mangesh/Coding/GameDev/Allegro/src/CScene.cpp
 	"CScene.h"
 
-1478317515 /home/mangesh/Coding/GameDev/Allegro/include/CScene.h
+1478338508 /home/mangesh/Coding/GameDev/Allegro/include/CScene.h
 	"CGameObject.h"
 	<list>
 
-1478279057 /home/mangesh/Coding/GameDev/Allegro/include/CSceneManager.h
+1478336514 /home/mangesh/Coding/GameDev/Allegro/include/CSceneManager.h
 	<list>
 	"CScene.h"
+	<cstddef>
 
-1478279046 source:/home/mangesh/Coding/GameDev/Allegro/src/CSceneManager.cpp
+1478337238 source:/home/mangesh/Coding/GameDev/Allegro/src/CSceneManager.cpp
 	"CSceneManager.h"
+
+1478338600 /home/mangesh/Coding/GameDev/Allegro/include/CRenderer.h
+	"CScene.h"
+
+1478334552 source:/home/mangesh/Coding/GameDev/Allegro/src/SpaceShip.cpp
+	"SpaceShip.h"
+
+1478339218 /home/mangesh/Coding/GameDev/Allegro/include/SpaceShip.h
+	"CGameObject.h"
+
+1478338961 source:/home/mangesh/Coding/GameDev/Allegro/src/CRenderer.cpp
+	"CRenderer.h"
 

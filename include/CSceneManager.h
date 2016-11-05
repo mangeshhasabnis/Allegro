@@ -3,6 +3,7 @@
 
 #include <list>
 #include "CScene.h"
+#include <cstddef>
 
 class CSceneManager
 {
@@ -10,6 +11,7 @@ class CSceneManager
         CSceneManager();
         virtual ~CSceneManager();
         void AddScene(CScene &scene);
+        CScene * GetCurrentScene();
         //void Update();
     protected:
     private:

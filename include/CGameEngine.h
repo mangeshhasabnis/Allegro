@@ -6,11 +6,12 @@
 #include "allegro5/allegro_image.h"
 #include "allegro5/allegro_native_dialog.h"
 #include "CSceneManager.h"
+#include "CRenderer.h"
 
 class CGameEngine
 {
     public:
-        CGameEngine();
+        CGameEngine(CSceneManager *parScManager, CRenderer *parRenderer);
         virtual ~CGameEngine();
         void Initialize();
         void Start();
@@ -28,6 +29,8 @@ class CGameEngine
         const int SCREEN_H = 600;
 
         CSceneManager *sceneManager;
+
+        CRenderer *renderer;
 
         void InitializeKeys();
 };

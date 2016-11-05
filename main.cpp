@@ -2,7 +2,12 @@
 
 int main(int argc, char **argv) {
 
-    CGameEngine *engine = new CGameEngine();
+
+    CSceneManager *sceneManager = new CSceneManager();
+    CRenderer *renderer = new CRenderer();
+
+
+    CGameEngine *engine = new CGameEngine(sceneManager, renderer);
 
     engine->Initialize();
     engine->Start();

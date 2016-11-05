@@ -15,10 +15,7 @@ void CScene::AddGameObject(CGameObject &gameObject)
     this->objects.push_back(gameObject);
 }
 
-void CScene::Draw()
+std::list<CGameObject> CScene::GetGameObjects()
 {
-    for(std::list<CGameObject>::iterator it = this->objects.begin(); it != this->objects.end(); ++it)
-    {
-        it->Draw();
-    }
+    return this->objects;
 }

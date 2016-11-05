@@ -67,13 +67,17 @@
 		</Linker>
 		<Unit filename="include/CGameEngine.h" />
 		<Unit filename="include/CGameObject.h" />
+		<Unit filename="include/CRenderer.h" />
 		<Unit filename="include/CScene.h" />
 		<Unit filename="include/CSceneManager.h" />
+		<Unit filename="include/SpaceShip.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CGameEngine.cpp" />
 		<Unit filename="src/CGameObject.cpp" />
+		<Unit filename="src/CRenderer.cpp" />
 		<Unit filename="src/CScene.cpp" />
 		<Unit filename="src/CSceneManager.cpp" />
+		<Unit filename="src/SpaceShip.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

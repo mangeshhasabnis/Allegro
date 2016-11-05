@@ -10,7 +10,7 @@ class CScene
         CScene();
         virtual ~CScene();
         void AddGameObject(CGameObject &gameObject);
-        void Draw();
+        std::list<CGameObject> GetGameObjects();
     protected:
     private:
         std::list<CGameObject> objects;

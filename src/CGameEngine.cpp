@@ -4,7 +4,7 @@ enum MYKEYS {
    KEY_UP, KEY_DOWN, KEY_LEFT, KEY_RIGHT
 };
 
-CGameEngine::CGameEngine()
+CGameEngine::CGameEngine(CSceneManager *parScManager, CRenderer *parRenderer)
 {
     display = NULL;
     event_queue = NULL;
@@ -14,7 +14,10 @@ CGameEngine::CGameEngine()
     redraw = true;
     doexit = false;
 
-    sceneManager = new CSceneManager();
+    /*sceneManager = new CSceneManager();
+    renderer = new CRenderer();*/
+    sceneManager = parScManager;
+    renderer = parRenderer;
 
 }
 
@@ -71,6 +74,8 @@ void CGameEngine::Initialize()
 
 void CGameEngine::Start()
 {
+    CScene * currentScene = NULL;
+
     al_flip_display();
     //al_rest(5);
     al_start_timer(timer);
@@ -136,6 +141,8 @@ void CGameEngine::Start()
             al_draw_bitmap(enemy_ship4,400,400, 0);
             al_flip_display();
         }*/
+
+        currentScene = this->sceneManager->GetCurrentScene();
 
     }
 }
